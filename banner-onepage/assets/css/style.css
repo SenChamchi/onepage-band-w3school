@@ -1,0 +1,379 @@
+/*reset css */
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* css chung s/d toàn bài */
+
+.backgr-black{
+    background-color: #000;
+}
+.text-while{
+    color: #fff !important;
+}
+
+.band-center{
+    margin: auto;
+}
+.txt-center{
+    text-align: center;
+}
+.col-half{
+    width: 50%;
+    /* float: right; */
+    
+}
+/* .pad-cent{
+    padding-left: 0; 
+    padding-right: 0;
+} */
+/* end */
+#main{
+
+}
+/* tạo thanh header và thanh nav */
+#header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 10;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+
+}
+
+#nav{
+    display: inline-block;
+    box-shadow: #757575 ;
+}
+#nav, .subnav{
+    list-style: none;
+}
+#nav > li{
+    display: inline-block;
+}
+#nav  li{
+    
+    position: relative;
+
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav  li  a{
+    display:block;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+
+}
+#nav  li:hover .subnav{
+    /* opacity: 1; */
+    display: block;  /* 2 cách hiện */
+}
+
+#nav > li:hover > a,
+#nav  .subnav  li:hover a{
+    color: rgb(0, 0, 0);
+    background-color: #ccc;
+}
+
+#nav  .subnav{
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    position: absolute;
+    /* opacity: 0; */
+    top:100%;
+    left:0;
+}
+
+#nav  .subnav  li{
+    min-width: 160px;
+}
+
+#nav  .subnav   a{
+    color: #333;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#header .search-btn{
+    float: right;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 23px;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+/* kết thúc thanh header */
+
+/* ảnh & chữ banner */
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(https://www.w3schools.com/w3images/chicago.jpg)  top center / cover no-repeat;
+    
+}
+#slider .text-sli{
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    padding-top: 25px;
+    font-size: 15px;
+}
+/* end ảnh & chữ banner */
+/* bắt đầu phần conten  */
+/* chia làm 4 phần
+ p1 con */
+#content{
+    /* width: 800px; */
+}
+#content .band-pad64{
+    padding: 64px 16px;
+    /* max-width: 800px; */
+    
+}
+
+#content .band-wide{    
+    /* min-width: 768px; */
+    /* padding-left: 0; padding-right: 0; */
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 30px;
+
+}
+
+#content .band-opacity{
+    /* min-width: 768px; */
+    /* text-align: center; */
+    font-style: italic;
+    opacity: 0.5;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#content .band-justify{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0 16px;
+}
+
+#content .band-memlist{
+    display: flex;
+    width: 800px;
+    padding: 32px 0;
+    /* flex-wrap: wrap; */
+    /* box-sizing: border-box; */
+}
+
+#content .memlist-item{
+    width: 33.33%;
+}
+
+#content .name-item{
+    /* display: block; */
+    margin: 15px 0px;
+}
+
+#content .mem-avatar{
+    width: 60%;
+    border-radius: 4px;
+}
+
+#content .band-ul{
+    max-width: 800px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #757575;
+    list-style: none;
+}
+
+#content .band-ul li{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#content .band-tag{
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 0 8px;
+}
+
+#content .band-slot{
+    float: right;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 0px 7px;
+    margin-right: 22px;
+}
+/* img và buy tikits */
+#content .band-tikit{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    padding: 32px 0;
+    
+}
+
+#content .tikit-item{
+    display: block;
+    width: 32%;
+}
+
+#content .tikit-img{
+    width: 100%;
+    display: block;
+}
+
+#content .tikit-img:hover{
+    opacity: 0.6;
+}   
+
+#content .tikit-body{
+    font-size: 15px;
+    background-color: #fff;
+    padding: 0 16px;
+    display: inline-block;
+}
+
+#content .tikit-title{
+    font-size: 15px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+#content .tikit-dateyear{
+    margin: 15px 0;
+    color: rgb(141, 139, 139);
+}
+
+#content .tikit-describe{
+    margin: 15px 0;
+}
+
+#content .tikit-btn{
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+}
+
+#content .tikit-btn:hover,#content .contact-btn:hover{
+    color: #333;
+    background-color: #cccc;
+}
+/* end phần tikits */
+
+/* start contact */
+#content .band-contact{
+    display: flex;
+    width: 800px;
+    margin: auto;
+    padding: 32px 0;
+}
+
+#content .row{
+    display: flex;
+}
+
+#content .row .col-full, .band-map img{
+    width: 100%;
+}
+#content .contact-address{
+    font-size: 18px;
+    width: 50%;
+    line-height: 1.4;
+}
+
+.contact-address i[class*="fa-"] {
+    width: 30px;
+}
+#content .contact-message{
+    width: 50%;
+    font-size: 15px;
+}
+
+#content .form-control{
+    width: 100%;
+    padding: 11PX;
+    border: 1px solid #ccc;
+}
+#content .contact-btn{
+    float: right;
+    margin: 16px 8px;
+    padding: 11px 17px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    font-weight: 100;
+    cursor: pointer;
+}
+/* end contact */
+
+/* band map */
+.band-map{
+    background-color: #fefefe;
+}
+
+/* end contact */
+/* class chung form */
+.pad-8{
+    padding: 0 8px;
+}
+.mg-t8{
+    margin-top: 8px;
+}
+/* end form */
+
+#footer{
+    padding: 64px 16px;
+    background-color: #fefefe;
+    /* line-height: 2.3; */
+    opacity: 0.7;
+}
+
+#footer i[class*="fa-"]{
+    font-size: 24px;
+}
+
+.icon-hov:hover{
+    opacity: 0.5;
+}
+
+#footer .copyright, .copyright a{
+    color: #000 !important;
+    font-size: 15px !important;
+    margin: 15px 0;
+}
