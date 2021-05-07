@@ -1,0 +1,30 @@
+/* pc >1024px */
+@media (min-width: 1024px){
+    #header .menu-mobile{
+        display: none;
+    }
+}
+
+/* tablet 740px-1023px */
+@media (min-width:741px) and (max-width:1023px){
+    #header .menu-mobile{
+        display: none;
+    }
+}
+
+/* mobile <740px */
+@media (max-width:740px){
+    #header{
+        /* height: auto; */
+        overflow: hidden;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+
+    #nav > li{
+        display: block;
+    }
+    
+}

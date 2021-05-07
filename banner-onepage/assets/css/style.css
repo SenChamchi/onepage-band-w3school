@@ -25,17 +25,23 @@ html{
 }
 .col-half{
     width: 50%;
-    /* float: right; */
-    
-}
-/* .pad-cent{
-    padding-left: 0; 
-    padding-right: 0;
-} */
-/* end */
-#main{
+} 
 
+.pad-8l{
+    padding-left:8px;
 }
+.pad-8r{
+    padding-right:8px;
+}
+
+.mg-t8{
+    margin-top: 8px;
+}
+.mar15{
+    margin: 15px 0;
+}
+/* end */
+
 /* tạo thanh header và thanh nav */
 #header{
     position: fixed;
@@ -44,7 +50,6 @@ html{
     background-color: black;
     z-index: 10;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
-
 }
 
 #nav{
@@ -58,9 +63,7 @@ html{
     display: inline-block;
 }
 #nav  li{
-    
     position: relative;
-
 }
 #nav > li > a{
     color: #fff;
@@ -105,7 +108,7 @@ html{
     line-height: 38px;
 }
 
-#header .search-btn{
+#header .search-btn,#header .menu-mobile{
     float: right;
     color: #fff;
     line-height: 46px;
@@ -115,6 +118,10 @@ html{
 #header .search-btn:hover{
     background-color: #f44336;
     cursor: pointer;
+}
+#header .menu-mobile:hover{
+    background-color: #ccc;
+    color: #000;
 }
 
 /* kết thúc thanh header */
@@ -148,9 +155,7 @@ html{
 /* bắt đầu phần conten  */
 /* chia làm 4 phần
  p1 con */
-#content{
-    /* width: 800px; */
-}
+
 #content .band-pad64{
     padding: 64px 16px;
     /* max-width: 800px; */
@@ -187,19 +192,14 @@ html{
 
 #content .band-memlist{
     display: flex;
-    width: 800px;
+    max-width: 800px;
     padding: 32px 0;
     /* flex-wrap: wrap; */
     /* box-sizing: border-box; */
 }
 
 #content .memlist-item{
-    width: 33.33%;
-}
-
-#content .name-item{
-    /* display: block; */
-    margin: 15px 0px;
+    width: 33.3333%;
 }
 
 #content .mem-avatar{
@@ -265,31 +265,36 @@ html{
     padding: 0 16px;
     display: inline-block;
 }
-
+#content .tikit-body>p{
+    margin: 15px 0;
+}
 #content .tikit-title{
     font-size: 15px;
-    margin: 15px 0;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #content .tikit-dateyear{
-    margin: 15px 0;
     color: rgb(141, 139, 139);
 }
-
-#content .tikit-describe{
-    margin: 15px 0;
+#content .contact-btn,#content .tikit-btn{
+    background-color: #000;
+    color: #fff;
+    
 }
-
 #content .tikit-btn{
     display: inline-block;
-    background-color: #333;
-    color: #fff;
     text-decoration: none;
     margin-bottom: 16px;
     padding: 8px 16px;
 }
-
+#content .contact-btn{
+    float: right;
+    margin: 16px 0;
+    padding: 11px 17px;
+    border: none;
+    font-weight: 100;
+    cursor: pointer;
+}
 #content .tikit-btn:hover,#content .contact-btn:hover{
     color: #333;
     background-color: #cccc;
@@ -299,13 +304,14 @@ html{
 /* start contact */
 #content .band-contact{
     display: flex;
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     padding: 32px 0;
 }
 
 #content .row{
     display: flex;
+    justify-content: space-between;
 }
 
 #content .row .col-full, .band-map img{
@@ -330,37 +336,20 @@ html{
     padding: 11PX;
     border: 1px solid #ccc;
 }
-#content .contact-btn{
-    float: right;
-    margin: 16px 8px;
-    padding: 11px 17px;
-    color: #fff;
-    background-color: #000;
-    border: none;
-    font-weight: 100;
-    cursor: pointer;
-}
+
 /* end contact */
 
-/* band map */
+    /* band map */
 .band-map{
     background-color: #fefefe;
 }
 
 /* end contact */
-/* class chung form */
-.pad-8{
-    padding: 0 8px;
-}
-.mg-t8{
-    margin-top: 8px;
-}
+
 /* end form */
 
 #footer{
     padding: 64px 16px;
-    background-color: #fefefe;
-    /* line-height: 2.3; */
     opacity: 0.7;
 }
 
